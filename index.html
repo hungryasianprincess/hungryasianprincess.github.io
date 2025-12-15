@@ -32,7 +32,6 @@
       position: relative;
     }
 
-    /* Dark overlay for text readability */
     body::before {
       content: '';
       position: absolute;
@@ -74,15 +73,17 @@
       line-height: 1.6;
     }
 
-    /* Unicode email symbol */
     .email-link {
+      text-decoration: none;
+    }
+
+    .email-symbol {
       color: #FFF500;
       font-size: 2rem;
-      text-decoration: none;
       transition: color 0.3s;
     }
 
-    .email-link:hover {
+    .email-link:hover .email-symbol {
       color: #e6e600;
     }
 
@@ -95,7 +96,7 @@
         font-size: 1rem;
       }
 
-      .email-link {
+      .email-symbol {
         font-size: 1.5rem;
       }
     }
@@ -108,7 +109,9 @@
     <p class="description">
       After Use is a digital archive that serves to spotlight the voices of people in recovery by providing a voluntary space for storytelling to represent the social contexts of substance use and recovery.
     </p>
-    <a href="mailto:madbrad38@gmail.com" class="email-link">✉️</a>
+    <a href="mailto:madbrad38@gmail.com" class="email-link">
+      <span class="email-symbol">✉️</span>
+    </a>
   </div>
 </body>
 </html>
